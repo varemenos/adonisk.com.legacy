@@ -19,6 +19,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('views', ['svg2json', 'jade', 'clean:svg2json']);
 
 	grunt.registerTask('build', ['copy', 'style', 'script', 'views']);
+	grunt.registerTask('publish', ['gh-pages']);
 
 	grunt.registerTask('default', ['browserSync', 'watch']);
 };
