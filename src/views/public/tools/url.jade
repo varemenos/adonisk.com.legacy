@@ -1,0 +1,40 @@
+extends /common/layout
+block header
+	include /common/header
+block content
+	include /mixins/subheader
+	+subheader(subheader.tools)
+	main#tool
+		#selection.active
+			//- button#action-settings(disabled)
+			//- 	i.fa.fa-cog
+			//- 	|  Settings
+			button#action-encode
+				i.fa.fa-play
+				|  Encode
+			button#action-decode
+				i.fa.fa-play
+				|  Decode
+		#settings
+			label
+				| Use Spaces&nbsp;
+				input#action-spaces(type="checkbox", checked)
+				select(name="tabs")
+					option(value="2")
+						| Tab Size: 2px
+					option(value="4")
+						| Tab Size: 4px
+					option(value="8")
+						| Tab Size: 8px
+		#inputEditor.editor
+			h4.editorTitle
+				| Input
+			#edit
+		#outputEditor.editor
+			h4.editorTitle
+				| Output
+			#output
+block footer
+	include /common/footer
+	script(src="/libs/ace/ace.js")
+	script(src="/js/url.js")

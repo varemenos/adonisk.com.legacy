@@ -1,0 +1,19 @@
+{
+  "name": "adonisk.com",
+  "version": "0.0.1",
+  "homepage": "http://adonisk.com",
+  "authors": [
+    "Adonis K. <aklp08@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [],
+  "dependencies": {
+    "verepo": "~0.0.2",
+    "jquery": "~2.1.1",
+    "js-beautify": "~1.5.5",
+    "Font-Awesome-SVG-PNG": "font-awesome-svg-png#~1.1.2",
+    "ace-builds": "~1.2.0",
+    "autoprefixer-rails": "ai/autoprefixer-rails#~5.2.1"
+  }
+}

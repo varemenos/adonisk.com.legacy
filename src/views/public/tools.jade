@@ -1,0 +1,36 @@
+extends /common/layout
+block header
+	include /common/header
+block content
+	include /mixins/subheader
+	+subheader(subheader.tools)
+	main#tools
+		h1
+			| Tools
+		h2
+			a(href="/tools/prefixer")
+				| Prefixer
+		p
+			| Prefix your CSS utiliazing Autoprefixer's configuration.
+		h2
+			a(href="/tools/prettify")
+				| Prettify
+		p
+			| Prettify your HTML, CSS or Javascript.
+		h2
+			a(href="/tools/base64")
+				| Base64 Decoder
+		p
+			| Decode from and to Base64.
+		h2
+			a(href="/tools/url")
+				| Url Decoder
+		p
+			| Decode from and to a query part of a URL.
+		h2
+			a
+				| More
+		p
+			| Coming soon.
+block footer
+	include /common/footer

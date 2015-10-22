@@ -1,0 +1,5 @@
+mixin subheader(links)
+	nav#sub-navigation
+		each link in links
+			a(href="#{link.anchor}")
+				| #{link.title}

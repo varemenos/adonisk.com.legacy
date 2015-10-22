@@ -1,0 +1,127 @@
+extends /common/layout
+block header
+	include /common/header
+block content
+	include /mixins/subheader
+	+subheader(subheader.resume)
+	main#resume
+		h1
+			| Resume
+		#introduction(itemscope, itemtype="http://schema.org/Person", style="padding-bottom: 0")
+				h2
+					| Introduction
+				div(itemprop="description")
+					p
+						| My name is
+						span(itemprop="name")
+							|  Adonis Kakoulidis
+						|  and I am a Software Engineer from
+						span(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+							span(itemprop="addressLocality")
+									|  Thessaloniki
+							|,
+							span(itemprop="addressCountry")
+								|  Greece
+						|.
+					p
+						| I specialize in Frontend web development with a focus on clean and efficient (S)CSS and JavaScript code with over 6 years of experience. I've studied Software Engineering at the Technological Institute of Central Greece and my tools of trade consist of a text editor (Sublime Text 3), a Linux Distro (usually ArchLinux), a terminal emulator, various CLI tools, SSH, Adobe Photoshop and more.
+					p
+						| In my free time, I usually try to put my imagination and creativity into creating stuff with CSS and JavaScript (usually in codepen or codemagic). I also author technical posts at my blog (aklp.gr) and work on new and exciting open source side-projects. Once in a while I do consulting and debugging for other fellow developers who ask for my assistance.
+					p
+						| In the past I made a lot of digital art using tools like Adobe Photoshop, Inkscape, Adobe After Effects and Cinema4D.
+		#skills-and-expertise
+			h2
+				a(href="#skills-and-expertise")
+				| Skills &amp; Expertise
+			ul
+				li
+					h3
+						| Me
+					ul
+						li
+							| Quick study and eager to learn
+						li
+							| Dedicated to my work
+						li
+							| Knowledgeable about various computer technology topics, be it the hardware, software, networking etc.
+				li
+					h3
+						| Web Technologies
+					ul
+						li
+							| Exceptional HTML5 and CSS (also SASS) knowledge.
+						li
+							| Strong JavaScript, AJAX, JQuery, JSON and Node.js knowledge.
+						li
+							| Strong LAMP knowledge.
+						li
+							| Excellent debugging, UX and responsive design skills.
+						li
+							| "Photoshop Veteran," with more than 8 years of experience.
+						li
+							| Well informed about any new web-development trends, technology advances and various other topics related to my work.
+						li
+							| Familiar with templating system, software development patterns, MVC-like framemeworks for the web, etc.
+				li
+					h3
+						| Other
+					ul
+						li
+							| Git
+						li
+							| GitHub, Bitbucket and Jira.
+						li
+							| Mobile web-development.
+						li
+							| Cross browser support.
+						li
+							| Able to do Accessibility work.
+						li
+							| Search engine friendly.
+						li
+							| Print Media (logos, banners, cards, posters etc).
+						li
+							| Photo &amp; Video Manipulation.
+						li
+							| Consulting.
+		#experience
+			h2
+				a(href="#experience")
+				| Experience
+			ul
+				li
+					h3
+						| Frontend Engineer at
+						span(itemscope, itemtype="http://schema.org/Organization")
+							span(itemprop="name")
+								|  Goodvidio
+					h4
+						| April 2014 - Present
+					p
+						a(href="http://goodvid.io")
+							| [site]
+				li
+					h3
+						| Freelance and Volunteer
+					h4
+						| 2008 - 2013
+					p
+						| In the past I also did a lot of freelance work and supported communities by either creating their website/forum or by supporting them with maintaining their linux servers.
+
+		#education
+			h2
+				a(href="#education")
+				| Education
+			ul
+				li
+					h3
+						| Bachelor of Science (B.Sc.), Software Engineering at the Technological Educational Institute of Central Greece.
+				li
+					h3
+						| Democritus Technological Highschool of Thessaloniki, Greece.
+block footer
+	include /common/footer
+		button#scroll2top(title="Scroll to top")
+			| Scroll to top&nbsp;
+			img.icon(src="data:image/svg+xml;base64,#{icons['angle-up']}")
+	script(src="/js/resume.js")

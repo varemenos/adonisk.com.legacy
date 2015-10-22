@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="description", content="Personal website of Adonis K.")
+		meta(name="keywords", content="Adonis K.,Frontend,Software Engineer,CSS,JavaScript,SASS,HTML,Portfolio,Resume,Projects,Tools")
+		meta(name="author", content="Adonis K.")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="apple-touch-icon", href="apple-touch-icon.png")
+		title
+			| #{title}
+		style.
+			header a { color: #fff; text-decoration: none; }
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+		link(rel='stylesheet', href='/css/style.css')
+	body#top
+		#wrap
+			block header
+			block content
+			block footer

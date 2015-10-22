@@ -1,0 +1,46 @@
+extends /common/layout
+block header
+	include /common/header
+block content
+	include /mixins/subheader
+	+subheader(subheader.tools)
+	main#tool
+		#selection.active
+			label
+				select(name="lang")
+					option(value="html")
+						| HTML
+					option(value="css")
+						| CSS
+					option(value="javascript")
+						| JavaScript
+			//- button#action-settings
+			//- 	i.fa.fa-cog
+			//- 	|  Settings
+			button#action-prettify
+				i.fa.fa-expand
+				|  Prettify
+		#settings
+			label
+				| Use Spaces&nbsp;
+				input#action-spaces(type="checkbox", checked)
+			label
+				select(name="tabs")
+					option(value="2")
+						| Tab Size: 2px
+					option(value="4")
+						| Tab Size: 4px
+					option(value="8")
+						| Tab Size: 8px
+		#inputEditor.editor
+			h4.editorTitle
+				| Input
+			#edit
+		#outputEditor.editor
+			h4.editorTitle
+				| Output
+			#output
+block footer
+	include /common/footer
+	script(src="/libs/ace/ace.js")
+	script(src="/js/prettify.js")
