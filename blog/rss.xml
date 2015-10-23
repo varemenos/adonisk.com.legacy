@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Adonis K. Blog]]></title>
+        <description><![CDATA[Adonis K. Blog]]></description>
+        <link>http://adonisk.com/blog/</link>
+        <image>
+            <url>http://adonisk.com/img/logo.jpg</url>
+            <title>Adonis K. Blog</title>
+            <link>http://adonisk.com/blog/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Fri, 23 Oct 2015 23:43:28 GMT</lastBuildDate>
+        <atom:link href="http://adonisk.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 23 Oct 2015 23:43:28 GMT</pubDate>
+        <language><![CDATA[en]]></language>
+        <category><![CDATA[CSS]]></category>
+        <category><![CDATA[Tools of Trade]]></category>
+        <category><![CDATA[Javascript]]></category>
+        <category><![CDATA[Dropplets]]></category>
+        <item>
+            <title><![CDATA[How to inline font-faces inside a CSS file]]></title>
+            <description><![CDATA[Hello, today I will show you how to quickly inline your font-face files inside a CSS file. The following example only explains the process for a woff file but the process is the same for all font-face formats: 1) The first step is to get your woff file converted into a base64 string and afterwards make sure you trim those newline characters
+2) Create a new font-face @rule and insert the base64 string inside the font-face...]]></description>
+            <link>http://adonisk.com/blog/blog/how-to-inline-font-faces-inside-a-css-file.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/how-to-inline-font-faces-inside-a-css-file.html</guid>
+            <category><![CDATA[CSS]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Fri, 30 May 2014 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Why you shouldn't use a GIT GUI]]></title>
+            <description><![CDATA[Well, the title is a bit misleading, you can use a GUI but you shouldn't do it without first knowing how the Git CLI (command line interface) actually works. I understand how difficult git can be (I've been there) (I'm pretty sure I'm still there) but if you start using the various GUI tools out there, you will almost certainly never understand how git works. I've seen a lot of my friends and colleagues do...]]></description>
+            <link>http://adonisk.com/blog/blog/why-you-shouldnt-use-a-git-gui.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/why-you-shouldnt-use-a-git-gui.html</guid>
+            <category><![CDATA[Tools of Trade]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Wed, 28 May 2014 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[My oh-my-zsh setup]]></title>
+            <description><![CDATA[As a web-developer using a terminal became a daily routine quite soon and after a while I realized that I had to start making a terminal setup for myself. What I was looking for was something that would help me raise my productivity by either avoiding various annoyances that I've encountered throughout the journey or by including tools that I didn't use before that would smoothen the road ahead. After a lot of digging for...]]></description>
+            <link>http://adonisk.com/blog/blog/my-oh-my-zsh-setup.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/my-oh-my-zsh-setup.html</guid>
+            <category><![CDATA[Tools of Trade]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Tue, 18 Mar 2014 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to check if your browser supports CSS3's calc with JavaScript]]></title>
+            <description><![CDATA[Recently I had to use CSS3's calc() value for a website I was designing and it seemed ridiculous to include a whole library (Modernizr) for just 1 CSS property's value. So I decided to write a small script to detect if calc was supported by the browsers or not (and it seems like it's rather similar to Modernizr's way of detecting it).
+So, here is the script: Now you can:...]]></description>
+            <link>http://adonisk.com/blog/blog/how-to-check-if-your-browser-supports-CSS3-s-calc-with-javascript.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/how-to-check-if-your-browser-supports-CSS3-s-calc-with-javascript.html</guid>
+            <category><![CDATA[Javascript]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Tue, 26 Nov 2013 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to prevent TypeError Exception when checking object values in JavaScript]]></title>
+            <description><![CDATA[I'm certain a lot of you have had this issue in the past, I did too. So, let me demostrate to you have to quickly solve this issue without almost no change in your current code. The code above will output the following error string `Uncaught TypeError: Cannot read property 'first' of undefined` in the JavaScript console. To fix this issue, you need to first check whether the object path you are trying to check...]]></description>
+            <link>http://adonisk.com/blog/blog/how-to-prevent-typeerror-exception-when-checking-object-values-in-javascript.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/how-to-prevent-typeerror-exception-when-checking-object-values-in-javascript.html</guid>
+            <category><![CDATA[Javascript]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Sun, 10 Nov 2013 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to add callback to a function]]></title>
+            <description><![CDATA[We all know and love JQuery's callback and since I love it so much I wanted to replicate when I started recreating [codemagic](https://github.com/varemenos/codemagic). It seems like it's rather easy to do, all you have to do is add another parameter named `callback` (you can name it whatever you want, I just prefer it this way) and after checking wether the parameter is a function, execute it before the end of the container function.
+Here is an...]]></description>
+            <link>http://adonisk.com/blog/blog/how-to-add-callback-to-a-function.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/how-to-add-callback-to-a-function.html</guid>
+            <category><![CDATA[Javascript]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Tue, 29 Oct 2013 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to drain every single drop of juice out of Sublime Text]]></title>
+            <description><![CDATA[Countless frontend developer use Sublime Text and I'm no exception. This piece of software is so awesome, functional and customizable that forces you to love it.
+Anyway, in this blog post I will share some of the packages and settings I'm using daily and since they make my day so much easier (This post will focus on Sublime Text 3 since I've switched to it about a month ago). Before we dig deep into the package...]]></description>
+            <link>http://adonisk.com/blog/blog/how-to-drain-every-single-drop-of-juice-out-of-sublime-text.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/how-to-drain-every-single-drop-of-juice-out-of-sublime-text.html</guid>
+            <category><![CDATA[Tools of Trade]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Sun, 29 Sep 2013 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to create a simple CSS3 animated loader]]></title>
+            <description><![CDATA[In this blog-post/tutorial I will show you how to create a simple CSS3 animated loader by only using 1 HTML element. A couple of months ago a lets-create-css3-loaders trend was initiated in codepen with a lot of people trying to create impressive and functional CSS3 Loaders. So as a CSS3 enthusiast I accepted the challenge and created a couple of them ([#1](http://codepen.io/varemenos/pen/EeulL), [#2](http://codepen.io/varemenos/pen/oJLge)). Using one of these 2 creations I will be showing you how...]]></description>
+            <link>http://adonisk.com/blog/blog/how-to-create-a-simple-css3-animated-loader.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/how-to-create-a-simple-css3-animated-loader.html</guid>
+            <category><![CDATA[CSS]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Fri, 27 Sep 2013 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dropplets template variables and fuctions]]></title>
+            <description><![CDATA[It seems like there is no documentation for Dropplets' templates, so I did some digging and found the variables and functions that can be used for template development. __variables__: __functions__: __globals__: Those are the vars and functions returned via `get_defined_vars()` and `get_defined_functions()`. After a bit more digging into the dropplets' file system I've found some globals that are assigned by using `define()`...]]></description>
+            <link>http://adonisk.com/blog/blog/dropplets-template-variables-and-fuctions.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/dropplets-template-variables-and-fuctions.html</guid>
+            <category><![CDATA[Dropplets]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Thu, 26 Sep 2013 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The AKLPgr template]]></title>
+            <description><![CDATA[The AKLP.gr dropplets template is made by Adonis K. for AKLP.gr, it's open source and can be found at [github](https://github.com/varemenos/aklpgr-dropplets-template) under the [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US) license. Feel free to contribute or use it for your own blog! Before using it you need to do some minor modifications, for example:...]]></description>
+            <link>http://adonisk.com/blog/blog/the-aklpgr-template.html</link>
+            <guid isPermaLink="true">http://adonisk.com/blog/blog/the-aklpgr-template.html</guid>
+            <category><![CDATA[Dropplets]]></category>
+            <dc:creator><![CDATA[Adonis K.]]></dc:creator>
+            <pubDate>Thu, 26 Sep 2013 21:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
