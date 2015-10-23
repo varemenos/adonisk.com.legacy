@@ -7,9 +7,8 @@ module.exports = {
 			keepSpecialComments: false
 		},
 		files: {
-			'dist/css/style.css': [
-				'dist/css/style.css'
-			]
+			'dist/css/style.css': ['dist/css/style.css'],
+			'dist/css/blog.css': ['dist/css/blog.css']
 		}
 	}
 };

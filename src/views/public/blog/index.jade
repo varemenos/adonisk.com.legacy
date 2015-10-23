@@ -1,0 +1,27 @@
+extends /common/layout
+block header
+	include /common/header
+	link(rel='stylesheet', href='/css/blog.css')
+block content
+	each post in posts
+		article.post
+			h2.post_title
+				a(href="#{post.path}")
+					| #{post.title}
+			.post_content
+				aside
+					img.post_image(src="#{post.image}")
+				main
+					.post_metadata
+						p.post_description
+							| #{post.description}
+						p
+							| Author: #{post.author}
+						p
+							| Date: #{post.date}
+						p
+							| Categories: #{post.categories.join(', ')}
+					a.post_read_more(href="#{post.path}")
+							| Read more
+block footer
+	include /common/footer

@@ -1,8 +1,6 @@
 module.exports = function (grunt) {
-	// lazy-load only the required grunt tasks
 	require('jit-grunt')(grunt);
 
-	// load and then initialize all task configurations
 	var taskConfigs = require('load-grunt-configs')(grunt, {
 		config: {
 			src: 'tasks/config/*.js'
@@ -11,12 +9,11 @@ module.exports = function (grunt) {
 
 	grunt.initConfig(taskConfigs);
 
-	// load custom tasks from ./tasks folder
 	grunt.task.loadTasks('./tasks');
 
 	grunt.registerTask('style', ['sass', 'postcss', 'cssmin']);
 	grunt.registerTask('script', ['concat', 'uglify']);
-	grunt.registerTask('views', ['svg2json', 'jade', 'clean:svg2json']);
+	grunt.registerTask('views', ['svg2json', 'jade', 'blog', 'clean:svg2json']);
 
 	grunt.registerTask('build', ['copy', 'style', 'script', 'views']);
 	grunt.registerTask('publish', ['build', 'gh-pages']);

@@ -10,7 +10,8 @@ module.exports = {
 	},
 	style: {
 		files: [
-			'src/scss/style.scss'
+			'src/scss/style.scss',
+			'src/scss/blog.scss'
 		],
 		tasks: ['style'],
 		reload: true

@@ -1,0 +1,144 @@
+$color: #222;
+$white: #fff;
+$brightWhite: darken($white, 5%);
+$small: 1rem;
+$normal: 2rem;
+$main-color: #933;
+
+body{
+    color: #595959;
+    background-color: $main-color;
+}
+
+h3{
+    font-size: 1.56rem;
+}
+
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 $normal 0;
+}
+
+.post{
+    padding: $normal;
+    background: $white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.post_image {
+    height: 150px;
+    outline: 5px solid rgba(255, 255, 255 ,0.5);
+}
+
+.post_title{
+    margin-top: 0;
+    margin-bottom: $normal;
+    line-height: 3rem;
+    font-size: 2.5rem;
+
+    a{
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+
+        &:focus,
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.post_content{
+    display: flex;
+    margin: 0;
+}
+
+aside{
+    max-width: 20%;
+}
+
+main {
+    flex: 1;
+    margin-left: $normal;
+
+    h2:first-child{
+        line-height: 1;
+    }
+
+    *:first-child{
+        margin-top: 0;
+    }
+}
+
+.post_metadata > p{
+    margin: 0;
+    line-height: 1.5;
+
+    &.post_description{
+        margin-bottom: $normal;
+    }
+}
+
+.post_read_more{
+    display: inline-block;
+    background: $main-color;
+    margin-top: $normal;
+    padding: 0.5rem 1rem;
+    color: $white;
+    border-radius: 3px;
+    text-decoration: none;
+
+    &,
+    &:visited{
+        color: $white;
+    }
+
+    &:focus,
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.post_description{
+    text-align: justify;
+}
+
+hr{
+    border-top: 2px dashed rgba(black, 0.2);
+    border-bottom: 2px dashed rgba(black, 0.2);
+    border-left: none;
+    border-right: none;
+}
+
+blockquote{
+    margin: $normal 0;
+    border-left: $small solid darken($brightWhite, 5%);
+
+    & > * {
+        margin: $small 0;
+        padding: $small $normal;
+        background-color: $brightWhite;
+    }
+}
+
+code{
+    word-wrap: break-word;
+    background-color: rgba(black, 0.05);
+}
+
+code[class*="language-"],
+pre[class*="language-"]{
+    background-color: transparent;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"]{
+    box-sizing: border-box;
+    border: 1px solid darken($brightWhite, 5%);
+}
+
+#disqus_thread{
+    margin-top: 2rem;
+}

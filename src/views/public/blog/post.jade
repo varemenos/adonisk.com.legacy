@@ -1,0 +1,23 @@
+extends /common/layout
+block header
+	include /common/header
+	link(rel='stylesheet', href='/css/blog.css')
+block content
+	article.post
+		h2.post_title
+			| #{post.title}
+		.post_content
+			aside
+				img.post_image(src="#{post.image}")
+				.post_metadata
+					p
+						| Author: #{post.author}
+					p
+						| Date: #{post.date}
+					p
+						| Categories: #{post.categories.join(', ')}
+			main
+				| !{post.rendered}
+		include /common/comments
+block footer
+	include /common/footer

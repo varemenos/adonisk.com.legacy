@@ -10,6 +10,9 @@ html(lang="en")
 		link(rel="apple-touch-icon", href="apple-touch-icon.png")
 		title
 			| #{title}
+			if post
+				if post.title
+					|  - #{post.title}
 		style.
 			header a { color: #fff; text-decoration: none; }
 		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
