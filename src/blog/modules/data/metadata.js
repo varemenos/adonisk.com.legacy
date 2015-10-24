@@ -13,6 +13,4 @@ var exports = module.exports = function (config) {
 		metadata.image = './' + post.image;
 		post = _.extend(post, metadata);
 	});
-
-	console.log('	✔ metadata loaded [ ' + config.posts.length + ' ]');
 };

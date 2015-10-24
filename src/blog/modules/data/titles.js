@@ -12,8 +12,6 @@ var titles = function (config) {
 			}
 		});
 	});
-
-	console.log('	✔ titles loaded [ ' + config.posts.length + ' ]');
 };
 
 var exports = module.exports = titles;

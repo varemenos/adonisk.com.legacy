@@ -15,6 +15,4 @@ var exports = module.exports = function (config) {
 			});
 		}
 	});
-
-	console.log('	✔ posts loaded [ ' + config.posts.length + ' ]');
 };

@@ -20,6 +20,4 @@ var exports = module.exports = function (config) {
 			post.description = description.join(' ') + '...';
 		}
 	});
-
-	console.log('	✔ descriptions loaded [ ' + config.posts.length + ' ]');
 };

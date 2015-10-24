@@ -15,7 +15,7 @@ var exports = module.exports = function (config) {
 					post.image = file;
 
 					var src = path.resolve(config.pwd + config.path.posts + file);
-					var dest = path.resolve(config.pwd + config.dist + config.path.posts + file);
+					var dest = path.resolve(config.pwd + config.dist + config.path.blog + file);
 
 					fse.copySync(src, dest);
 
@@ -24,6 +24,4 @@ var exports = module.exports = function (config) {
 			}
 		});
 	});
-
-	console.log('	✔ images loaded [ ' + config.posts.length + ' ]');
 };

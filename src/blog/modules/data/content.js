@@ -7,6 +7,4 @@ var exports = module.exports = function (config) {
 		post.content = postContent;
 		post.rendered = marked(post.content.split('\n').splice(1).join('\n'));
 	});
-
-	console.log('	✔ content loaded [ ' + config.posts.length + ' ]');
 };

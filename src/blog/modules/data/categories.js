@@ -9,6 +9,4 @@ var exports = module.exports = function (config) {
 	});
 
 	config.categories = _.uniq(categories);
-
-	console.log('	✔ categories loaded [ ' + config.posts.length + ' ]');
 };

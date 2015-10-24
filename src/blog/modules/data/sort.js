@@ -7,6 +7,4 @@ var exports = module.exports = function (config) {
 
 		return -dateNumber;
 	});
-
-	console.log('	✔ posts ordered by [date DESC] [ ' + config.posts.length + ' ]');
 };

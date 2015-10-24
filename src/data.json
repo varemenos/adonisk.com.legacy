@@ -105,7 +105,8 @@
 		"url": "http://adonisk.com/blog",
 		"dist": "/../dist",
 		"path": {
-			"posts": "/blog/"
+			"blog": "/blog/",
+			"posts": "/blog/posts/"
 		}
 	},
 	"pretty": false,
