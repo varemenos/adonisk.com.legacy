@@ -1,5 +1,4 @@
 var posts = require('./data/posts');
-var images = require('./data/images');
 var metadata = require('./data/metadata');
 var sort = require('./data/sort');
 var content = require('./data/content');
@@ -9,7 +8,6 @@ var categories = require('./data/categories');
 
 var data = function (config) {
 	posts(config);
-	images(config);
 	metadata(config);
 	sort(config);
 	content(config);

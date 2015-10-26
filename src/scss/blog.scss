@@ -1,5 +1,6 @@
 $color: #222;
 $white: #fff;
+$dark-grey: #666;
 $brightWhite: darken($white, 5%);
 $small: 1rem;
 $normal: 2rem;
@@ -51,17 +52,25 @@ h3{
 }
 
 .post_content{
-    display: flex;
     margin: 0;
 }
 
 aside{
-    max-width: 20%;
+    display: flex;
+    background-color: $dark-grey;
+    color: $white;
+
+    & > p{
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        padding: $small;
+        line-height: 1.5;
+    }
 }
 
 main {
-    flex: 1;
-    margin-left: $normal;
+    text-align: justify;
 
     h2:first-child{
         line-height: 1;
@@ -69,15 +78,6 @@ main {
 
     *:first-child{
         margin-top: 0;
-    }
-}
-
-.post_metadata > p{
-    margin: 0;
-    line-height: 1.5;
-
-    &.post_description{
-        margin-bottom: $normal;
     }
 }
 
@@ -115,7 +115,10 @@ hr{
 
 blockquote{
     margin: $normal 0;
-    border-left: $small solid darken($brightWhite, 5%);
+
+    & > p {
+        border-left: $small solid darken($brightWhite, 5%);
+    }
 
     & > * {
         margin: $small 0;

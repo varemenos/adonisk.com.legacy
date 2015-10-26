@@ -9,19 +9,9 @@ block content
 				a(href="#{post.path}")
 					| #{post.title}
 			.post_content
-				aside
-					img.post_image(src="#{post.image}")
 				main
-					.post_metadata
-						p.post_description
-							| #{post.description}
-						p
-							| Author: #{post.author}
-						p
-							| Date: #{post.date}
-						p
-							| Categories: #{post.categories.join(', ')}
-					a.post_read_more(href="#{post.path}")
-							| Read more
+					| #{post.description}
+				a.post_read_more(href="#{post.path}")
+					| Read more
 block footer
 	include /common/footer

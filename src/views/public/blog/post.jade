@@ -7,17 +7,16 @@ block content
 		h2.post_title
 			| #{post.title}
 		.post_content
-			aside
-				img.post_image(src="#{post.image}")
-				.post_metadata
-					p
-						| Author: #{post.author}
-					p
-						| Date: #{post.date}
-					p
-						| Categories: #{post.categories.join(', ')}
 			main
 				| !{post.rendered}
+			aside.post_metadata
+				p
+					| Date: #{post.date}
+				p
+					if post.categories && post.categories.length > 1
+						| Categories: #{post.categories.join(', ')}
+					else
+						| Category: #{post.categories[0]}
 		include /common/comments
 block footer
 	include /common/footer

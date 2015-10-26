@@ -23,6 +23,12 @@ module.exports = {
 		tasks: ['script'],
 		reload: true
 	},
+	blog: {
+		files: [
+			'src/blog/posts/**/*.md'
+		],
+		tasks: ['build']
+	},
 	configs: {
 		files: [
 			'tasks/**/*.js',
