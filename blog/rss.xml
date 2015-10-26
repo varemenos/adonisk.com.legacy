@@ -9,9 +9,9 @@
             <link>http://adonisk.com/blog/</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 26 Oct 2015 14:36:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Oct 2015 15:16:20 GMT</lastBuildDate>
         <atom:link href="http://adonisk.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 26 Oct 2015 14:36:01 GMT</pubDate>
+        <pubDate>Mon, 26 Oct 2015 15:16:20 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <category><![CDATA[CSS]]></category>
         <category><![CDATA[Tools of Trade]]></category>
@@ -19,8 +19,7 @@
         <category><![CDATA[Dropplets]]></category>
         <item>
             <title><![CDATA[How to inline font-faces inside a CSS file]]></title>
-            <description><![CDATA[Hello, today I will show you how to quickly inline your font-face files inside a CSS file. The following example only explains the process for a woff file but the process is the same for all font-face formats: 1) The first step is to get your woff file converted into a base64 string and afterwards make sure you trim those newline characters
-2) Create a new font-face @rule and insert the base64 string inside the font-face...]]></description>
+            <description><![CDATA[Hello, today I will show you how to quickly inline your font-face files inside a CSS file. The following example only explains the process for a woff file but the process is the same for all font-face formats: Here is a simple example: __CSS__ __HTML__ Credits go to the Twitter team and Sime Vidas for letting me know via [this tweet](https://twitter.com/simevidas/status/472541998252294145)...]]></description>
             <link>http://adonisk.com/blog/blog/posts/how-to-inline-font-faces-inside-a-css-file.html</link>
             <guid isPermaLink="true">http://adonisk.com/blog/blog/posts/how-to-inline-font-faces-inside-a-css-file.html</guid>
             <category><![CDATA[CSS]]></category>
