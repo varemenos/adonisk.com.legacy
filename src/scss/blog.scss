@@ -2,6 +2,7 @@ $color: #222;
 $white: #fff;
 $dark-grey: #666;
 $brightWhite: darken($white, 5%);
+$tiny: 0.75rem;
 $small: 1rem;
 $normal: 2rem;
 $main-color: #933;
@@ -71,6 +72,7 @@ aside{
 
 main {
     text-align: justify;
+    word-break: break-word;
 
     h2:first-child{
         line-height: 1;
@@ -129,7 +131,21 @@ blockquote{
 
 code{
     word-wrap: break-word;
-    background-color: rgba(black, 0.05);
+}
+
+pre,
+code {
+    background-color: $brightWhite;
+    text-align: left;
+    font-size: $tiny;
+}
+
+pre {
+    & > code {
+        padding: $small;
+        display: inline-block;
+        word-break: break-word;
+    }
 }
 
 code[class*="language-"],
