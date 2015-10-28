@@ -12,6 +12,12 @@ module.exports = {
 				cwd: 'src/',
 				src: 'favicon.ico',
 				dest: 'dist/'
+			},
+			{
+				expand: true,
+				cwd: 'src/libs/ace-builds/src-min-noconflict',
+				src: '**/*',
+				dest: 'dist/libs/ace/'
 			}
 		]
 	}
