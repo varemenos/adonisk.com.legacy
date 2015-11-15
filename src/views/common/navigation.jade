@@ -1,0 +1,6 @@
+nav#navigation(role='navigation')
+	each item in navigation.main
+		a(href="#{item.link}", target="#{item.external ? '_blank': '_self'}")
+			img.icon(src="data:image/svg+xml;base64,#{icons[item.icon]}")
+			span
+				|  #{item.name}

@@ -5,13 +5,5 @@ header
 	h2.brand
 		| Frontend Engineer
 	.brand-image
-	nav#navigation(role='navigation')
-		each item in navigation.main
-			a(href="#{item.link}", target="#{item.external ? '_blank': '_self'}")
-				img.icon(src="data:image/svg+xml;base64,#{icons[item.icon]}")
-				span
-					|  #{item.name}
-	nav#navigation-links
-		each item in navigation.links
-			a(href="#{item.link}", title="#{item.title || 'Adonis K. on ' + item.name}" target="_blank")
-				img.icon(src="data:image/svg+xml;base64,#{icons[item.icon]}")
+	include /common/navigation
+	include /common/links

@@ -1,0 +1,4 @@
+nav#navigation-links
+	each item in navigation.links
+		a(href="#{item.link}", title="#{item.title || 'Adonis K. on ' + item.name}" target="_blank")
+			img.icon(src="data:image/svg+xml;base64,#{icons[item.icon]}")
