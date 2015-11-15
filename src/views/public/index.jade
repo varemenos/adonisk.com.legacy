@@ -7,6 +7,13 @@ block content
 			.hero--title
 				| Hi! I'm Adonis
 			.hero--subtitle
-				| a Frontend Engineer from Greece.
+				| a Frontend Engineer currently working for&nbsp;
+				a(href="http://goodvid.io", target="_blank")
+					| Goodvid.io
+				| .
+		.blocks
+			include /mixins/block
+			each item in blocks
+				+block(item)
 block footer
 	include /common/footer

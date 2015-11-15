@@ -1,10 +1,8 @@
 @import "_verepo";
 @import "assets/_vlogo";
-@import "assets/_king_pawnage";
 @import "assets/_ham_menu";
 
 @include normalize;
-@include grid(12, 1rem);
 
 @function base64 ($img, $type:"jpeg") {
 	@if ($type == "svg") {
@@ -59,7 +57,7 @@ header{
 	background-color: $main-color;
 	text-rendering: optimizeLegibility;
 
-	@media only screen and (max-device-width: 599px){
+	@media only screen and (max-device-width: 599px) {
 		position: fixed;
 		z-index: 15;
 		top: 3rem;
@@ -275,26 +273,64 @@ main{
 	box-sizing: border-box;
 	overflow: hidden;
 	position: relative;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-image: url(base64($king_pawnage));
 	background-color: $main-color;
 
-	&:after{
-		padding-top: 56.25%;
-		content: "";
+	.blocks {
+		display: flex;
+		flex-wrap: wrap;
+
+		@media only screen and (max-device-width: 599px) {
+			display: initial;
+			flex-wrap: initial;
+			padding: initial;
+		}
+	}
+
+	.block {
 		display: block;
+		box-sizing: border-box;
+		width: 50%;
+		margin-top: 2.5rem;
+		padding: 1rem 2rem;
+		color: $main-color;
+		background-color: #fff;
+		border-right: 2.5rem solid $main-color;
+		transition: 250ms color ease-in-out, 250ms background-color ease-in-out;
+
+		&:hover {
+			text-decoration: none;
+			// color: #f96;
+			// background-color: darken($main-color, 5%);
+		}
+
+		&:nth-child(2n) {
+			border-right: none;
+		}
+
+		.icon {
+			margin-right: 0.25em;
+			padding: 0.25em;
+			background: $main-color;
+			border-radius: 3px;
+
+			&,
+			& + span {
+				line-height: 1;
+				vertical-align: middle;
+			}
+		}
+
+		@media only screen and (max-device-width: 599px) {
+			width: 100%;
+			border-right: none;
+			margin-top: 1rem;
+		}
 	}
 }
 
 .hero{
 	box-sizing: border-box;
-	position: absolute;
 	display: block;
-	top: 50%;
-	left: 50%;
 	margin: 0;
 	width: 100%;
 	padding: 0.75em;
@@ -304,14 +340,15 @@ main{
 	line-height: 1em;
 	color: #444;
 	text-rendering: optimizeLegibility;
-	background: rgba(255, 255, 255, 0.5);
-	transform: translateX(-50%) translateY(-50%);
+	background: #fff;
 
 	&--title{
-		margin-bottom: 0.375rem;
+		line-height: 1;
+		margin-bottom: 1rem;
 	}
 
 	&--subtitle{
+		line-height: 1;
 		font-size: 0.5em;
 		font-weight: normal;
 	}
@@ -423,7 +460,7 @@ footer{
 	p{
 		margin: 0;
 		padding: 1rem;
-		color: white;
+		color: #fff;
 		text-align: center;
 	}
 }
