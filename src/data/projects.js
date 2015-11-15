@@ -28,18 +28,18 @@ exports = module.exports = [
 		},
 		description: 'Guidelines for writing sane, maintainable and scalable Sass.'
 	}, {
-		title: 'FOSSCOMM 2014 (website)',
-		links: {
-			site: 'http://lamia.fosscomm.gr',
-			source: 'https://github.com/varemenos/fosscomm2014-theme'
-		},
-		description: 'The Wordpress theme for FOSSCOMM 2014\'s website. FOSSCOMM (Free and Open Source Software Communities Meeting) is a Greek conference aiming at Open Source enthusiasts, developers, and communities.'
-	}, {
 		title: 'docFinder',
 		links: {
 			android: 'https://play.google.com/store/apps/details?id=com.varemenos.docfinder',
 			source: 'https://github.com/varemenos/docfinder'
 		},
 		description: 'An open source Documentation Searching webapp using searchco.de\'s API which provides documentation for languages like Apache 2, GIT, GNU/Linux Commands, HTTP Codes, Java, Javascript, JQuery, MySQL, Nginx, Perl 5, PHP, Python, Underscore.js, VB 6 and more.'
+	}, {
+		title: 'FOSSCOMM 2014 (website)',
+		links: {
+			site: 'http://lamia.fosscomm.gr',
+			source: 'https://github.com/varemenos/fosscomm2014-theme'
+		},
+		description: 'The Wordpress theme for FOSSCOMM 2014\'s website. FOSSCOMM (Free and Open Source Software Communities Meeting) is a Greek conference aiming at Open Source enthusiasts, developers, and communities.'
 	}
 ];
