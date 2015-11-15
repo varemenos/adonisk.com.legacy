@@ -1,0 +1,8 @@
+mixin block(item)
+	a.block(href="#{item.anchor}")
+		h2
+			img.icon(src="data:image/svg+xml;base64,#{icons[item.icon]}")
+			span
+				| #{item.title}
+		p
+			| #{item.description}
