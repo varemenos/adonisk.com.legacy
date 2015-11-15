@@ -17,7 +17,7 @@
 		"description": "Various tools to make your frontend-life easier"
 	},{
 		"title": "Blog",
-		"anchor": "/blog.html",
+		"anchor": "/blog",
 		"icon": "comments",
 		"description": "An archive of bits and pieces I've written that could be useful to you"
 	}],
