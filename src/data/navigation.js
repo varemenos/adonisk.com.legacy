@@ -3,7 +3,7 @@ exports = module.exports = {
 		{
 			name: 'Home',
 			icon: 'home',
-			link: '/'
+			link: '/index.html'
 		}, {
 			name: 'Resume',
 			icon: 'user',
