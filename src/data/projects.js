@@ -28,6 +28,13 @@ exports = module.exports = [
 		},
 		description: 'Guidelines for writing sane, maintainable and scalable Sass.'
 	}, {
+		title: 'DEVit Conference',
+		links: {
+			site: 'http://devitconf.org',
+			source: 'https://github.com/skgtech/devit'
+		},
+		description: 'DEVit is a 360° Web Development Conference held annually in Thessaloniki, Greece with talks about the latest trends and techniques for Frontend, Backend, DevOps and Security! We are 360° and proud of it!'
+	}, {
 		title: 'docFinder',
 		links: {
 			android: 'https://play.google.com/store/apps/details?id=com.varemenos.docfinder',
