@@ -1,0 +1,20 @@
+mixin project(item)
+	.project
+		h2
+			.project--title
+				| #{item.title}
+			if item.links
+				span.project--links
+					if item.links.site
+						a(href="#{item.links.site}", target="_blank")
+							| site
+						| ,&nbsp;
+					if item.links.android
+						a(href="#{item.links.android}", target="_blank")
+							| Play store
+						| ,&nbsp;
+					if item.links.source
+					a(href="#{item.links.source}", target="_blank")
+						| source
+		p
+			| #{item.description}

@@ -486,6 +486,42 @@ footer{
 	}
 }
 
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project {
+	box-sizing: border-box;
+	width: 50%;
+	border-right: 2.5em solid rgba(0, 0, 0, 0);
+
+	h2 {
+		display: flex;
+	}
+
+	&--title {
+		flex: 1;
+	}
+
+	&--links {
+		font-weight: lighter;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	&:nth-child(2n) {
+		border-right: none;
+	}
+
+	@media only screen and (max-device-width: 599px) {
+		width: 100%;
+		border-right: none;
+	}
+}
+
 .icon {
 	height: 1em;
 	width: 1em;

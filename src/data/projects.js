@@ -21,6 +21,20 @@ exports = module.exports = [
 		},
 		description: 'A digital playground to explore the capabilities of Sass.js.'
 	}, {
+		title: 'Sass Guidelines translation (Greek)',
+		links: {
+			site: 'http://sass-guidelin.es',
+			source: 'https://github.com/HugoGiraudel/sass-guidelines'
+		},
+		description: 'Guidelines for writing sane, maintainable and scalable Sass.'
+	}, {
+		title: 'FOSSCOMM 2014 (website)',
+		links: {
+			site: 'http://lamia.fosscomm.gr',
+			source: 'https://github.com/varemenos/fosscomm2014-theme'
+		},
+		description: 'The Wordpress theme for FOSSCOMM 2014\'s website. FOSSCOMM (Free and Open Source Software Communities Meeting) is a Greek conference aiming at Open Source enthusiasts, developers, and communities.'
+	}, {
 		title: 'docFinder',
 		links: {
 			android: 'https://play.google.com/store/apps/details?id=com.varemenos.docfinder',

@@ -2,40 +2,19 @@ extends /common/layout
 block header
 	include /common/header
 block content
-	//- nav#sub-navigation
-	//- 	a(href="#codemagic")
-	//- 		| Codemagic
-	//- 	a(href="#verepo")
-	//- 		| veRepo
-	//- 	a(href="#docfinder")
-	//- 		| docFinder
 	main#projects
 		h1
 			| Projects
-		each project in projects
-			h2
-				a(href="##{project.title.toLowerCase()}")
-				| #{project.title}
-			p
-				| #{project.description}
-			if project.links
-				p
-					if project.links.site
-						a(href="#{project.links.site}")
-							| [site]
-						| ,&nbsp;
-					if project.links.android
-						a(href="#{project.links.android}")
-							| [Play Store]
-						| ,&nbsp;
-					if project.links.source
-					a(href="#{project.links.source}")
-						| [source]
+		.projects
+			include /mixins/project
+			each item in projects
+				+project(item)
 		h2
 			| More
 		p
-			| There are more unlisted public projects in my&nbsp;
-			a(href="https://github.com/varemenos")
-				| github account
+			b
+				| There are many more projects that weren't listed here in my&nbsp;
+				a(href="https://github.com/varemenos")
+					| Github account
 block footer
 	include /common/footer
