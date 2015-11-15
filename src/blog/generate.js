@@ -8,7 +8,7 @@ var rss = require('./modules/rss');
 
 var pwd = process.cwd() + '/src';
 
-var projectConfig = require(pwd + '/data.json');
+var projectConfig = require(pwd + '/data/');
 config = projectConfig.blog;
 config.pwd = pwd;
 

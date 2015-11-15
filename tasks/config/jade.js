@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = function (grunt) {
 	return {
 		views: {
@@ -5,7 +7,7 @@ module.exports = function (grunt) {
 				pretty: false,
 				basedir: 'src/views',
 				data: function (dest, src) {
-					var data = grunt.file.readJSON('src/data.json');
+					var data = require(path.join(process.cwd(), '/src/data/index'));
 
 					var icons = grunt.file.readJSON('dist/libs/icons.json');
 					data.icons = icons;

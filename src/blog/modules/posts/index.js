@@ -4,7 +4,7 @@ var jade = require('jade');
 
 var exports = module.exports = function (config) {
 	var build = function (posts) {
-		var data = require(process.cwd() + '/src/data.json');
+		var data = require(process.cwd() + '/src/data/');
 		data.icons = require(process.cwd() + '/dist/libs/icons.json');
 
 		data.posts = posts;

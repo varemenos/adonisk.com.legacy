@@ -10,7 +10,7 @@ var exports = module.exports = function (config) {
 	};
 
 	var layout = function () {
-		var data = require(process.cwd() + '/src/data.json');
+		var data = require(process.cwd() + '/src/data/');
 		data.icons = require(process.cwd() + '/dist/libs/icons.json');
 
 		config.posts.forEach(function (post) {

@@ -2,7 +2,7 @@ module.exports = {
 	views: {
 		files: [
 			'src/views/**/*.jade',
-			'src/data.json',
+			'src/data/**/*',
 			'tasks/config/svg2json.js'
 		],
 		tasks: ['views'],
