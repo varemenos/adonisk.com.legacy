@@ -284,6 +284,16 @@ main{
 			flex-wrap: initial;
 			padding: initial;
 		}
+
+		&:hover {
+			.block {
+				opacity: 0.85;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
 	}
 
 	.block {
@@ -295,7 +305,7 @@ main{
 		color: $main-color;
 		background-color: #fff;
 		border-right: 2.5rem solid $main-color;
-		transition: 250ms color ease-in-out, 250ms background-color ease-in-out;
+		transition: 250ms color ease-in-out, 250ms background-color ease-in-out, 250ms opacity ease-in-out;
 
 		&:hover {
 			text-decoration: none;
