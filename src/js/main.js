@@ -20,12 +20,24 @@ var scroll2top = function () {
 	});
 };
 
+var getPath = function (str) {
+	return str
+		.replace('/', '')
+		.replace('index', '')
+		.replace('.html', '');
+};
+
 $(function () {
 	scroll2top();
 
 	// add active class to the currently viewed page
+	var path = window.location.pathname.split('/');
+	path.shift();
+
 	$('#navigation a, #sub-navigation a').each(function (i, item) {
-		if (window.location.pathname.indexOf($(item).attr('href')) > -1) {
+		var target = $(item).attr('href');
+
+		if (getPath(path[0]) === getPath(target)) {
 			$(item).addClass('active');
 		}
 	});
