@@ -1,0 +1,9 @@
+@function base64 ($img, $type:"jpeg") {
+	@if ($type == "svg") {
+		@return "data:image/svg+xml;base64," + $img;
+	} @else if ($type == "png") {
+		@return "data:image/png;base64," + $img;
+	} @else if ($type == "jpeg") {
+		@return "data:image/jpeg;base64," + $img;
+	}
+}

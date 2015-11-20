@@ -1,0 +1,25 @@
+.hero {
+	box-sizing: border-box;
+	display: block;
+	margin: 0;
+	width: 100%;
+	padding: 0.75em;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: center;
+	line-height: 1em;
+	color: #444;
+	text-rendering: optimizeLegibility;
+	background: #fff;
+
+	&--title{
+		line-height: 1;
+		margin-bottom: 1rem;
+	}
+
+	&--subtitle{
+		line-height: 1;
+		font-size: 0.5em;
+		font-weight: normal;
+	}
+}

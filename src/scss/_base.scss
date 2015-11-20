@@ -1,0 +1,73 @@
+@include normalize;
+
+.clearfix{
+	@include clearfix;
+}
+
+html {
+	font-family: 'Lato', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: $main-color;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+
+main{
+	@include clearfix;
+}
+
+a {
+	&,
+	&:visited {
+		color: $main-color;
+		text-decoration: none;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+h1 {
+	margin: 2rem 0;
+}
+
+header{
+	display: flex;
+	background-color: $main-color;
+	text-rendering: optimizeLegibility;
+
+	@media only screen and (max-device-width: 599px) {
+		position: fixed;
+		z-index: 15;
+		top: 3rem;
+		right: 100%;
+		height: 100%;
+		width: 100%;
+		transition: right 350ms;
+	}
+
+	&.opened{
+		right: 0%;
+	}
+}
+
+#wrap{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: $main-color;
+
+	p{
+		margin: 0;
+		padding: 1rem;
+		color: #fff;
+		text-align: center;
+	}
+}

@@ -1,0 +1,74 @@
+#navigation {
+	flex-grow: 1;
+}
+
+#navigation,
+#navigation-links {
+	display: block;
+
+	a {
+		@media only screen and (max-device-width: 599px) {
+			display: block;
+			text-align: center;
+		}
+
+		display: inline-block;
+		padding: 1rem;
+		line-height: 0;
+		font-weight: bold;
+		outline: none;
+		transition: background 250ms ease-out, color 250ms ease-out;
+
+		&,
+		&:visited {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		&.active {
+			color: #fff;
+			background-color: darken($main-color, 5%);
+		}
+
+		&:hover {
+			color: #f96;
+			background-color: darken($main-color, 5%);
+		}
+	}
+}
+
+#sub-navigation {
+	background-color: darken($main-color, 5%);
+
+	a {
+		display: inline-block;
+		padding: 0.75rem;
+		font-size: 0.8rem;
+		text-decoration: none;
+		outline: none;
+		transition: background 250ms ease-out, color 250ms ease-out;
+
+		&,
+		&:visited {
+			color: #fff;
+		}
+
+		&:hover {
+			color: #f96;
+			background-color: darken($main-color, 10%);
+		}
+
+		&.active {
+			background-color: darken($main-color, 10%);
+		}
+	}
+
+	&.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		max-width: 1140px;
+		margin: 0px auto;
+	}
+}

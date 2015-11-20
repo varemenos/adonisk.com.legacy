@@ -1,0 +1,58 @@
+#home {
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	background-color: $main-color;
+
+	.blocks {
+		display: flex;
+		flex-wrap: wrap;
+
+		@media only screen and (max-device-width: 599px) {
+			display: initial;
+			flex-wrap: initial;
+			padding: initial;
+		}
+	}
+
+	.block {
+		display: block;
+		box-sizing: border-box;
+		width: 50%;
+		margin-top: 2.5rem;
+		padding: 1rem 2rem;
+		color: $main-color;
+		background-color: #fff;
+		border-right: 2.5rem solid $main-color;
+		transition: 250ms color ease-in-out, 250ms background-color ease-in-out;
+
+		&:hover {
+			text-decoration: none;
+			// color: #f96;
+			// background-color: darken($main-color, 5%);
+		}
+
+		&:nth-child(2n) {
+			border-right: none;
+		}
+
+		.icon {
+			margin-right: 0.25em;
+			padding: 0.25em;
+			background: $main-color;
+			border-radius: 3px;
+
+			&,
+			& + span {
+				line-height: 1;
+				vertical-align: middle;
+			}
+		}
+
+		@media only screen and (max-device-width: 599px) {
+			width: 100%;
+			border-right: none;
+			margin-top: 1rem;
+		}
+	}
+}

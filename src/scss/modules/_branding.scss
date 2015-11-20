@@ -1,0 +1,34 @@
+.brand {
+	display: none;
+}
+
+#menu,
+.brand-image {
+	height: 3rem;
+	width: 3rem;
+	line-height: 1rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#menu {
+	display: none;
+	vertical-align: initial;
+	background-image: url(base64($ham_menu, "svg"));
+	background-color: transparent;
+	background-size: initial;
+	border: none;
+	box-shadow: none;
+
+	@media only screen and (max-device-width: 599px) {
+		display: block;
+	}
+}
+
+.brand-image {
+	display: block;
+	vertical-align: bottom;
+	background-image: url(base64($vlogo));
+	background-color: #333;
+	background-size: contain;
+}
