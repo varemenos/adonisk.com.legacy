@@ -1,9 +1,11 @@
-.projects {
+.projects,
+.tools {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.project {
+.project,
+.tool {
 	box-sizing: border-box;
 	width: 50%;
 	border-right: 2.5em solid rgba(0, 0, 0, 0);

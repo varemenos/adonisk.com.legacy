@@ -7,30 +7,9 @@ block content
 	main#tools
 		h1
 			| Tools
-		h2
-			a(href="/tools/prefixer.html")
-				| Prefixer
-		p
-			| Prefix your CSS utilizing Autoprefixer's configuration.
-		h2
-			a(href="/tools/prettify.html")
-				| Prettify
-		p
-			| Prettify your HTML, CSS or Javascript.
-		h2
-			a(href="/tools/base64.html")
-				| Base64 Decoder
-		p
-			| Decode from and to Base64 (only strings).
-		h2
-			a(href="/tools/url.html")
-				| Url Decoder
-		p
-			| Decode from and to a query part of a URL.
-		h2
-			a
-				| More
-		p
-			| Coming soon.
+		.tools
+			include /mixins/tool
+			each item in tools
+				+tool(item)
 block footer
 	include /common/footer

@@ -8,6 +8,7 @@ data.blocks = require('./blocks');
 data.subheader = require('./subheader');
 data.navigation = require('./navigation');
 data.projects = require('./projects');
+data.tools = require('./tools');
 data.blog = require('./blog');
 
 exports = module.exports = data;
