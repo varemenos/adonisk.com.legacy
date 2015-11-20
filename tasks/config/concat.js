@@ -9,12 +9,6 @@ module.exports = {
 		],
 		dest: 'dist/js/main.js'
 	},
-	resume: {
-		src: [
-			'src/js/resume.js'
-		],
-		dest: 'dist/js/resume.js'
-	},
 	base64: {
 		src: [
 			'src/js/tools/base64.js'
