@@ -9,6 +9,7 @@
 	line-height: 0;
 	border: none;
     box-shadow: 0 0 1px $main-color;
+    will-change: transform;
 
 	.icon {
 		background-color: $main-color;
