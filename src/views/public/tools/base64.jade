@@ -9,6 +9,11 @@ block content
 			//- button#action-settings(disabled)
 			//- 	i.fa.fa-cog
 			//- 	|  Settings
+			select(name="input", style="margin-right: 0.5em;")
+				option(value="text")
+					| Text
+				option(value="file")
+					| File
 			button#action-encode
 				i.fa.fa-play
 				|  Encode
@@ -29,6 +34,11 @@ block content
 		#inputEditor.editor
 			h4.editorTitle
 				| Input
+			#file
+				input(type="file", name="file_input")
+				label(for="file_input")
+					span
+						| Click to select a file or drop one here
 			#edit
 		#outputEditor.editor
 			h4.editorTitle
