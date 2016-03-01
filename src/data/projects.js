@@ -23,7 +23,7 @@ exports = module.exports = [
 	}, {
 		title: 'Sass Guidelines translation (Greek)',
 		links: {
-			site: 'http://sass-guidelin.es',
+			site: 'http://sass-guidelin.es/el/',
 			source: 'https://github.com/HugoGiraudel/sass-guidelines'
 		},
 		description: 'Guidelines for writing sane, maintainable and scalable Sass.'
