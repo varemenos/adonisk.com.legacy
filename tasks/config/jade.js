@@ -1,6 +1,8 @@
 var path = require('path');
 
 module.exports = function (grunt) {
+	'use strict';
+
 	return {
 		views: {
 			options: {

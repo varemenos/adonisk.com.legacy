@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+	'use strict';
+
 	var editor = ace.edit('edit');
 	var output = ace.edit('output');
 

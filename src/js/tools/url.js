@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+	'use strict';
+
 	var encode = function (decoded) {
 		return encodeURIComponent(decoded).replace(/'/g, '%27').replace(/"/g, '%22');
 	};
@@ -48,7 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	var spacesBtn = document.querySelector('#action-spaces');
 	var encodeBtn = document.querySelector('#action-encode');
 	var decodeBtn = document.querySelector('#action-decode');
-	// var settings = document.querySelector('#settings');
+
+    // var settings = document.querySelector('#settings');
 	var tabsSel = document.querySelector('select[name=tabs]');
 
 	// settingsBtn.addEventListener('click', function () {

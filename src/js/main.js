@@ -1,4 +1,6 @@
 var scroll2top = function () {
+	'use strict';
+
 	var applyScroll = function (el) {
 		var top = $(window).scrollTop();
 		if (top > $(window).height() / 3) {
@@ -21,6 +23,8 @@ var scroll2top = function () {
 };
 
 var getPath = function (str) {
+	'use strict';
+
 	return str
 		.replace('/', '')
 		.replace('index', '')
@@ -28,6 +32,8 @@ var getPath = function (str) {
 };
 
 $(function () {
+	'use strict';
+
 	scroll2top();
 
 	// add active class to the currently viewed page

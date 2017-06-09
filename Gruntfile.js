@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+	'use strict';
+
 	require('jit-grunt')(grunt);
 
 	var taskConfigs = require('load-grunt-configs')(grunt, {

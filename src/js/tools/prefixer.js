@@ -1,8 +1,12 @@
 var getBrowsers = function (browsers) {
+	'use strict';
+
 	return browsers.split(', ').join(',').split(' ,').join(',').split(',');
 };
 
 document.addEventListener('DOMContentLoaded', function () {
+	'use strict';
+
 	var editor = ace.edit('edit');
 	var output = ace.edit('output');
 	var defaultBrowsers = getBrowsers('> 1%, last 2 versions, Firefox ESR, Opera 12.1');

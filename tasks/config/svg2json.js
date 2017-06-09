@@ -14,6 +14,8 @@ module.exports = {
 				'linkedin',
 				'angle-up'
 			].map(function (icon) {
+				'use strict';
+
 				return 'src/libs/Font-Awesome-SVG-PNG/white/svg/' + icon + '.svg';
 			})
 		}

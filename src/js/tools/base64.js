@@ -1,4 +1,6 @@
 var selectInput = function (inputTypeEl) {
+	'use strict';
+
 	var el1 = document.querySelector('#edit');
 	var el2 = document.querySelector('#file');
 
@@ -12,6 +14,8 @@ var selectInput = function (inputTypeEl) {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
+	'use strict';
+
 	var editor = ace.edit('edit');
 	var output = ace.edit('output');
 
